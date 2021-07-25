@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" onsubmit="setEmployee()">
+        <p><label for="name">Name: </label><input id="name" type="text"></p>
+        <p>Gender: &nbsp&nbsp<label for="gender">Male <input type="radio" name="gender" value="male" id="male"></label>
+        <label for="female">Female </label><input type="radio" name="gender" value="female" id="female"></p>
+        <p><label for="address">Address: </label><textarea name="address" id="address" cols="25" rows="1"></textarea></p>
+        <p>Education: 
+            <select name="education" id="education">
+                <option value="matric">Matric</option>
+                <option value="inter">Inter</option>
+                <option value="graduate">Graduate</option>
+                <option value="masters">Masters</option>
+                <option value="m.phil">M.Phil</option>
+                <option value="Ph.d">Ph.d</option>
+                <option value="other">other</option>
+            </select>
+        </p>
+        <p>Profession: 
+            <select name="profession" id="profession">
+                <option value="student">Student</option>
+                <option value="intern">Intern</option>
+                <option value="freelancer">Freelancer</option>
+                <option value="designer">UI/UX Designer</option>
+                <option value="developer">Developer</option>
+                <option value="SQA">SQA</option>
+                <option value="other">other</option>
+            </select>
+        </p>
+        <input type="submit" value="submit">
+    </form>
+    <br>
+    <button onclick="getData()">Show the Data</button>
+</body>
+<script src="app.js"></script>
+</html>
